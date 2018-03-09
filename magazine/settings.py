@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DJ.urls'
+ROOT_URLCONF = 'magazine.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DJ.wsgi.application'
+WSGI_APPLICATION = 'magazine.wsgi.application'
 
 
 # Database
@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'DJ.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
+        'NAME': 'magazine',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST' : '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '5432'
     }
 }
 
